@@ -62,6 +62,7 @@ class Slider extends React.Component {
 						</div>
 						{this.props.items.map((slider, index) => (
 							<div className="col-md-2 col-sm-2 col-xs-1" key={index}>
+								<span className="slider-value">{slider.currentValue}</span>
 									<input type="range" id={index} min="1"
 										max="255" data-key={slider.name}
 										onChange={this.changeSlider} value={slider.currentValue}  

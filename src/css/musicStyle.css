@@ -39,7 +39,12 @@ footer a:hover{
 li {
 	list-style: none;
 }
-
+/* Slider value*/
+.slider-value{
+    margin-left: 90px;
+    margin-top: -25px;
+    display: block;
+}
 /* slider range value */
 .range-value{
 	margin-left: 90px;
