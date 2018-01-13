@@ -4,16 +4,20 @@
   "description": "An example to demonstrate the music equalizer",
   "main": "index.js",
   "scripts": {
-    "prestart": "babel-node tools/startMessage.js",
-    "start": "npm-run-all --parallel open:src lint:watch",
+    "start": "node tools/srcServer.js",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "babel-node tools/startMessage.js"
   },
   "author": "Shubham Chaturvedi",
   "license": "MIT",
   "dependencies": {
+    "babel-loader": "^6.2.8",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.2",
     "babel-polyfill": "^6.16.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
@@ -26,7 +30,10 @@
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "express": "^4.14.0",
+    "eventsource-polyfill": "^0.9.6",
+    "open": "^0.0.5"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
