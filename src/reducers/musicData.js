@@ -2,11 +2,11 @@ const defaultState = {
 	sliderData: [{
 		name: 'slider_60',
 		currentValue: 125,
-		rangevalue: '60'
+		rangevalue: '60k'
 	},{
 		name: 'slider_310',
 		currentValue: 125,
-		rangevalue: '310'
+		rangevalue: '310k'
 	},{
 		name: 'slider_1k',
 		currentValue: 125,
