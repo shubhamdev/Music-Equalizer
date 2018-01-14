@@ -12,3 +12,5 @@ npm install
 npm start
 ```
 The above command will watch the changes in your file and does the hot reloading as well.
+
+Live [a link](https://musicequalizer.herokuapp.com/)
